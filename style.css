@@ -164,6 +164,10 @@ section{
 
 }
 
+#prof-pic{
+    border-radius: 50%;
+}
+
 .section__pic-container{
     display: flex;
     height: 400px;
