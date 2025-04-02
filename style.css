@@ -212,6 +212,10 @@ section{
     cursor: pointer;
     height: 2rem;
 }
+.icon{
+
+    height: 2rem;
+}
 
 /* buttons */
 
@@ -309,4 +313,43 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+
+/* experience section */
+
+#experience{
+    position: relative;
+}
+
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.article-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: initial;
+  }
+  
+  article {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    
+  }
+
+article, .icon {
+    cursor: default;
 }
