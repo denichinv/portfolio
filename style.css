@@ -336,6 +336,7 @@ section{
 
 }
 .article-container {
+     padding-left: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -347,9 +348,46 @@ section{
     align-items: center;
     gap: 0.5rem;
     width: 100%;
+
+  }
+
+  /* projects section */
+
+
+  #projects {
+    position: relative;
+  }
+
+  .color-container{
+    border-color: rgb(163, 163, 163);
+    background-color: rgb(250, 250, 250);
+  }
+
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+
+  }
+
+  .project-title{
+    margin: 1rem;
+
+    color: black;
+
+  }
+
+  .project-btn{
+    color: black;
+border: solid 0.1rem rgb(163, 163, 163) ;
     
   }
 
-article, .icon {
-    cursor: default;
-}
+  .project-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+  }
