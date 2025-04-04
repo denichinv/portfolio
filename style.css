@@ -400,7 +400,7 @@ border: solid 0.1rem rgb(163, 163, 163) ;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 71vh;
   }
   .contact-info-upper-container{
     display: flex;
@@ -429,3 +429,13 @@ border: solid 0.1rem rgb(163, 163, 163) ;
     height: 2.5rem;
 }
 
+/* footer section */
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+
+}
+footer p{
+    text-align: center;
+}
