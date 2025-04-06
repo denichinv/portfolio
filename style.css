@@ -238,7 +238,7 @@ section{
 
 .btn-color-1,
 .btn-color-2{
-    border: rgb(53, 53, 53);
+    border: 0.1rem solid rgb(163, 163, 163);;
 }
 .btn-color-1:hover,
 .btn-color-2:hover{
