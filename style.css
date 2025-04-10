@@ -35,7 +35,7 @@ nav, .nav-links {
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 15vh;
 }
 
 .nav-links {
@@ -454,4 +454,116 @@ footer{
 }
 footer p{
     text-align: center;
+}
+
+
+/* dark mode */
+
+.theme-toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+  
+  #theme-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  #theme-toggle img {
+    background-color: transparent;
+    height: 42px;
+    width: 42px;
+    display: block;
+  }
+  
+
+  /* Dark mode root setup */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  .dark-mode p,
+.dark-mode h2,
+.dark-mode .section__text__p1,
+.dark-mode .section__text__p2,
+.dark-mode .experience-sub-title,
+.dark-mode .project-sub-title {
+  color: #cccccc;
+}
+
+.dark-mode h1,
+.dark-mode h3,
+.dark-mode .title,
+.dark-mode .project-title {
+  color: #ffffff;
+}
+
+  
+  /* Links */
+  .dark-mode a {
+    color: #ffffff;
+  }
+  
+  .dark-mode a:hover {
+    color: #ccc;
+    text-decoration-color: #888;
+  }
+  
+  /* Nav + Mobile menu */
+  .dark-mode nav,
+  .dark-mode .menu-links {
+    background-color: #1a1a1a;
+  }
+  
+ .dark-mode .hamburger-icon span {
+    
+    background-color: rgb(255, 255, 255);
+   
+}
+  .dark-mode .menu-links a {
+    color: #fff;
+  }
+  
+  /* Experience cards, contact containers, etc. */
+  .dark-mode .details-container,
+  .dark-mode .contact-info-upper-container,
+  .dark-mode .color-container {
+    background-color: #1e1e1e;
+    border-color: #444;
+  }
+  
+  /* Buttons */
+  .dark-mode .btn-color-1,
+  .dark-mode .btn-color-2 {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  .dark-mode .btn-color-2:hover,
+  .dark-mode .btn-color-1:hover {
+    background-color: #555;
+    color: #fff;
+    border-color: #888;
+  }
+  
+  /* Footer */
+  .dark-mode footer {
+    background-color: #181818;
+  }
+  
+  .dark-mode footer p {
+    color: #ccc;
+  }
+  
+
+  /* icons dark */
+
+  .dark-mode .icons,
+.dark-mode .icon {
+  filter: invert(1);
 }
