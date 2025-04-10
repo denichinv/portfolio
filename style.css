@@ -371,6 +371,8 @@ section{
     height: 90%;
 
   }
+  
+
 
   .project-title{
     margin: 1rem;
@@ -394,6 +396,12 @@ border: solid 0.1rem rgb(163, 163, 163) ;
     justify-content: space-around;
   }
 
+  .project-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1rem;
+   
+}
 
   /* contacts section */
 
