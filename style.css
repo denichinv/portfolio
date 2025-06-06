@@ -499,8 +499,8 @@ footer p {
 }
 
 .dark-mode a:hover {
-  color: #ccc;
-  text-decoration-color: #888;
+  color: #999;
+  text-decoration-color: #aaa;
 }
 
 /* Nav + Mobile menu */
