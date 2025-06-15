@@ -1,315 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vilizar Denichin | Front-End Developer</title>
-    <link rel="icon" href="assets/icon.png" type="image/png">
 
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/mediaqueries.css" />
-  </head>
-  <body>
-    <div class="theme-toggle-container fade-in-up">
-      <button id="theme-toggle" onclick="toggleTheme()">
-        <img id="theme-icon" src="assets/dark.png" alt="Toggle Theme">
-      </button>
-    </div>
-    <nav id="desktop-nav" class="fade-in-up">
-      <div class="logo"> Vilizar Denichin</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Vilizar Denichin</div>
-      <div id="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <ul>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience"onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li></ul>
-        </div>
-      </div>
-    </nav>
- <section id="profile" class="fade-in-up">
-  <div class="section__pic-container">
-    <img src="./assets/profile-pic.JPG" alt="Vilizar Denichin profile picture" id="prof-pic">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vilizar Denichin | Front-End Developer</title>
+  <link rel="icon" href="assets/icon.png" type="image/png">
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/mediaqueries.css" />
+</head>
+
+<body>
+  <div class="theme-toggle-container fade-in-up">
+    <button id="theme-toggle" onclick="toggleTheme()">
+      <img id="theme-icon" src="assets/dark.png" alt="Toggle Theme">
+    </button>
   </div>
-  <div class="section__text">
-    <p class="section__text__p1">Hello I'm</p>
-    <h1 class="title" >Vilizar Denichin</h1>
-    <p class="section__text__p2">Frontend Developer</p>
-    <div class="btn-container">
-      <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-      <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info</button>
-    </div>
-    <div id="socials-container">
-     <img src="./assets/linkedin.png" alt="Linkedin profile" 
-     class="icons" onclick="window.open('https://www.linkedin.com/in/vilizar-denichin/', '_blank')">
-
-      <img src="./assets/github.png" alt="Github profile" 
-  class="icons"      onclick="window.open('https://github.com/denichinv', '_blank')">
-   
-    </div>
-  </div>
- </section>
- <section id="about" class="fade-in-up">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
-  <div class="section-container">
-    <div class="section__pic-container">
-      <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" id="about-pic">
-    </div>
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container fade-in-up">
-          <img src="./assets/experience.png" 
-          class="icon"
-          alt="experience">
-          <h3>Experience</h3>
-          <p>1+ years  <br>Frontend Development</p>
-        </div>
-     
-          <div class="details-container fade-in-up">
-            <img src="./assets/education.png"
-            class="icon" alt="education icon">
-            <h3>Education</h3>
-            <p>2 years  <br>Web Development</p>
-        
-          </div>
-   
-    </div>
-    <div class="text-container">
-      <p>I'm a front-end web developer with a keen eye for detail and a passion for creating seamless, user-friendly digital experiences. With a solid foundation in HTML, CSS, JavaScript, and experience working with React, I enjoy building responsive and dynamic web applications. My background in customer service and team collaboration has honed my problem-solving skills, allowing me to work efficiently in fast-paced environments. Continuously expanding my knowledge, I've completed multiple certifications in front-end technologies and backend fundamentals, ensuring I stay up to date with industry trends. I'm excited to bring my technical expertise and creativity to impactful projects.</p>
-    </div>
-  </div>
-
-  <img src="./assets/arrow.png" alt="arrow icon" 
-class="icons" id="arrow" onclick="location.href='./#experience'">
- </section>
- <section id="experience" class="fade-in-up">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container frontend-container fade-in-up">
-        <h2 class="experience-sub-title">Frontend Development</h2>
-        <div class="article-container">
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>HTML</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>CSS</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>Javascript</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>React JS</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>Tailwind</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>NPM</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="details-container backend-container fade-in-up">
-        <h2 class="experience-sub-title">Backend Development</h2>
-        <div class="article-container">
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>PHP</h3>
-              <p>Basic</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>Python</h3>
-              <p>Basic</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>SQL</h3>
-              <p>Basic</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>Node JS</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img src="/assets/checkmark.png" alt="experience icon" class="icon">
-            <div>
-              <h3>Git</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <img src="./assets/arrow.png" alt="arrow icon" 
-class="icons" id="arrow" onclick="location.href='./#projects'">
- </section>
- <section id="projects" class="fade-in-up">
-<p class="section__text__p1">Browse My Recent</p>
-<h1 class="title">Projects</h1>
-<div class="experience-details-container">
-  <div class="about-containers">
-    <div class="details-container color-container fade-in-up">
-      <div class="project-container">
-        <img src="./assets/project-4.png" alt="Project 4"
-        class="project-img"/>
-      </div>
-      <h2 class="experience-sub-title project-title">Workout Routine Builder</h2>
-     <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br>Vite | LocalStorage API  </h4> <br>
-  
-      <p class="section__text__p1">A simple and elegant React app that helps you plan your weekly workout routine. Choose exercises, assign them to specific days, and customize sets and reps – all saved locally in your browser.</p> <br>
-  
-      <div class="btn-container">
-        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/denichinv/workout-routine-builder/', '_blank')">Github</button>
-        <button class="btn btn-color-2 project-btn" onclick="window.open('https://workoutroutinebuilder.netlify.app/', '_blank')">Live Demo</button>
-        
-      </div>
-    </div>
-  <div class="details-container color-container fade-in-up">
-    <div class="project-container">
-      <img src="./assets/project-2.png" alt="Project 2"
-      class="project-img"/>
-    </div>
-    <h2 class="experience-sub-title project-title">Investment Calculator</h2>
-   <h4 class="project-sub-title">React | JavaScript | CSS <br> Vite | ESLint </h4> <br>
-
-    <p class="section__text__p1">Financial planning tool that visualizes potential investment growth over time with year-by-year projections and multi-currency support.</p> <br>
-    
-    <div class="btn-container">
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/denichinv/investment_calculator/', '_blank')">Github</button>
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://denichinv.github.io/investment_calculator/', '_blank')">Live Demo</button>
-      
-    </div>
-  </div>
-  <div class="details-container color-container fade-in-up">
-    <div class="project-container">
-      <img src="./assets/project-3.png" alt="Project 3"
-      class="project-img"/>
-    </div>
-    <h2 class="experience-sub-title project-title">Password Generator</h2>
-   <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br> Vite | ESLint </h4> <br>
-
-
-    <p class="section__text__p1">Secure password generator with customizable length, character options, and one-click copy. Responsive and user-friendly design.
-    </p> <br>
-    <div class="btn-container">
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/denichinv/password-generator/', '_blank')">Github</button>
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://denichinv.github.io/password-generator/', '_blank')">Live Demo</button>
-      
-    </div>
-    
-  </div>
-  <div class="details-container color-container fade-in-up">
-    <div class="project-container">
-      <img src="./assets/project-1.png" alt="Project 1"
-      class="project-img"/>
-    </div>
-    <h2 class="experience-sub-title project-title">Digital Clock</h2>
-   <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br>Vite | ESLint </h4> <br>
-
-    <p class="section__text__p1">A fullscreen React clock with real-time time and date updates. Features a dynamic day/night background, responsive minimalist UI, and backdrop blur for enhanced readability.</p> <br>
-
-    <div class="btn-container">
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/denichinv/digital-clock/', '_blank')">Github</button>
-      <button class="btn btn-color-2 project-btn" onclick="window.open('https://funny-elf-44f4e9.netlify.app/', '_blank')">Live Demo</button>
-      
-    </div>
-  </div>
-
-</div>
-
-</div>
-<img src="./assets/arrow.png" alt="arrow icon" 
-class="icons" id="arrow" onclick="location.href='./#contacts'">
- </section>
- <section id="contacts" class="fade-in-up">
-  <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
-  <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img src="./assets/email.png" alt="email icon" class="icon email-icon"
-      >
-      <p><a href="mailto:denichinv@gmail.com">denichinv@gmail.com</a></p>
-    </div>
-  <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img src="./assets/linkedin.png" alt="linkedin icon" class="icon"
-      >
-      <p><a href="https://www.linkedin.com/in/vilizar-denichin/" target="_blank">LinkedIn</a></p>
-    </div>
-  </div>
- </section>
-
- <footer>
-  <nav>
-    <div class="nav-links-container fade-in-up">
-      <ul class="nav-links">
-        <li><a href="#desktop-nav">Profile</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-       
-      </ul>
-    </div>
-    
+  <nav id="desktop-nav" class="fade-in-up">
+    <div class="logo"> Vilizar Denichin</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
   </nav>
-  
-  <p class="fade-in-up"> Copyright &#169; 2025 Vilizar Denichin. All rights Reserved.</p>
-  
- </footer>
-    <script src="script.js">
+  <nav id="hamburger-nav">
+    <div class="logo">Vilizar Denichin</div>
+    <div id="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="profile" class="fade-in-up">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.JPG" alt="Vilizar Denichin profile picture" id="prof-pic">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Vilizar Denichin</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="Linkedin profile" class="icons"
+          onclick="window.open('https://www.linkedin.com/in/vilizar-denichin/', '_blank')">
+
+        <img src="./assets/github.png" alt="Github profile" class="icons"
+          onclick="window.open('https://github.com/denichinv', '_blank')">
+
+      </div>
+    </div>
+  </section>
+  <section id="about" class="fade-in-up">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpeg" alt="Profile picture" class="about-pic" id="about-pic">
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container fade-in-up">
+            <img src="./assets/experience.png" class="icon" alt="experience">
+            <h3>Experience</h3>
+            <p>1+ years <br>Frontend Development</p>
+          </div>
+
+          <div class="details-container fade-in-up">
+            <img src="./assets/education.png" class="icon" alt="education icon">
+            <h3>Education</h3>
+            <p>2 years <br>Web Development</p>
+
+          </div>
+
+        </div>
+        <div class="text-container">
+          <p>I'm a front-end web developer with a keen eye for detail and a passion for creating seamless, user-friendly
+            digital experiences. With a solid foundation in HTML, CSS, JavaScript, and experience working with React, I
+            enjoy building responsive and dynamic web applications. My background in customer service and team
+            collaboration has honed my problem-solving skills, allowing me to work efficiently in fast-paced
+            environments. Continuously expanding my knowledge, I've completed multiple certifications in front-end
+            technologies and backend fundamentals, ensuring I stay up to date with industry trends. I'm excited to bring
+            my technical expertise and creativity to impactful projects.</p>
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience" class="fade-in-up">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container frontend-container fade-in-up">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>Javascript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>React JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>Tailwind</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>NPM</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container backend-container fade-in-up">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>PHP</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>SQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>Node JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="/assets/checkmark.png" alt="experience icon" class="icon">
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow" onclick="location.href='./#projects'">
+  </section>
+  <section id="projects" class="fade-in-up">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
       
-    </script>
-  </body>
+      <div class="about-containers">
+        <div class="details-container color-container fade-in-up">
+          <div class="project-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Movie Library <br> CineVault</h2>
+          <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br> TMDB API | Vite
+          </h4> <br>
+
+          <p class="section__text__p1">A simple and elegant movie catalog app that lets users explore, search, and filter movies by
+            category using real-time data from TMDB API. Built for fast performance and smooth UI.</p> <br>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/denichinv/CineVault', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://cinevaultmoviesapp.netlify.app/', '_blank')">Live Demo</button>
+
+          </div>
+        </div>
+        <div class="details-container color-container fade-in-up">
+          <div class="project-container">
+            <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Workout Routine Builder</h2>
+          <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br>Vite | LocalStorage API </h4> <br>
+
+          <p class="section__text__p1">React app that helps you plan your weekly workout routine.
+            Choose exercises, assign them to specific days, and customize sets and reps – all saved locally in your
+            browser.</p> <br>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/denichinv/workout-routine-builder/', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://workoutroutinebuilder.netlify.app/', '_blank')">Live Demo</button>
+
+          </div>
+        </div>
+        <div class="details-container color-container fade-in-up">
+          <div class="project-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Investment Calculator</h2>
+          <h4 class="project-sub-title">React | JavaScript | CSS <br> Vite | ESLint </h4> <br>
+
+          <p class="section__text__p1">Financial planning tool that visualizes potential investment growth over time
+            with year-by-year projections and multi-currency support.</p> <br>
+
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/denichinv/investment_calculator/', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://denichinv.github.io/investment_calculator/', '_blank')">Live Demo</button>
+
+          </div>
+        </div>
+        <div class="details-container color-container fade-in-up">
+          <div class="project-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Password <br> Generator</h2>
+          <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br> Vite | ESLint </h4> <br>
+
+
+          <p class="section__text__p1">Secure password generator with customizable length, character options, and
+            one-click copy. Responsive and user-friendly design.
+          </p> <br>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/denichinv/password-generator/', '_blank')">Github</button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://denichinv.github.io/password-generator/', '_blank')">Live Demo</button>
+
+          </div>
+
+        </div>
+       
+
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow" onclick="location.href='./#contacts'">
+  </section>
+  <section id="contacts" class="fade-in-up">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="email icon" class="icon email-icon">
+        <p><a href="mailto:denichinv@gmail.com">denichinv@gmail.com</a></p>
+      </div>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="linkedin icon" class="icon">
+          <p><a href="https://www.linkedin.com/in/vilizar-denichin/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container fade-in-up">
+        <ul class="nav-links">
+          <li><a href="#desktop-nav">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+
+        </ul>
+      </div>
+
+    </nav>
+
+    <p class="fade-in-up"> Copyright &#169; 2025 Vilizar Denichin. All rights Reserved.</p>
+
+  </footer>
+  <script src="script.js">
+
+  </script>
+</body>
+
 </html>
