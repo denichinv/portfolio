@@ -313,7 +313,7 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -332,20 +332,17 @@ section {
 
 article {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
-  margin-left: 25%;
-}
 
-article div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 article h3 {
-  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.exIc {
+  width: 50px;
+  margin: 0rem 2rem;
 }
 
 .frontend-container .article-container,

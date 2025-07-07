@@ -17,6 +17,10 @@
     flex-wrap: wrap;
   }
 
+  xIc {
+    width: 40px;
+    margin: 0rem 0rem;
+  }
   #experience,
   .experience-details-container {
     margin-top: 2rem;
@@ -51,7 +55,7 @@
   }
 
   article {
-    margin-left: 20%;
+    /* margin-left: 20%; */
   }
 
   div .article-container article {
