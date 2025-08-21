@@ -14,11 +14,11 @@ function toggleTheme() {
   // Switch icons
   if (document.body.classList.contains("dark-mode")) {
     themeIcon.src = "assets/light.png";
-    profileImg.src = "assets/profile-pic-dark.jpeg";
-    aboutImg.src = "assets/about-pic-dark.jpeg";
+    profileImg.src = "assets/profile-pic-dark.webp";
+    aboutImg.src = "assets/about-pic-dark.webp";
   } else {
     themeIcon.src = "assets/dark.png";
-    profileImg.src = "assets/profile-pic.jpg";
-    aboutImg.src = "assets/about-pic.jpeg";
+    profileImg.src = "assets/profile-pic.webp";
+    aboutImg.src = "assets/about-pic.webp";
   }
 }
