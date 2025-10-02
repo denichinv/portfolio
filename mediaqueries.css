@@ -17,7 +17,7 @@
     flex-wrap: wrap;
   }
 
-  xIc {
+  .exIc {
     width: 2.3rem;
     margin: 0rem 0rem;
   }
@@ -116,7 +116,13 @@
   }
 
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .exIc {
+    height: 2rem;
+    margin: 0rem 0.5rem;
   }
 
   .logo {
@@ -156,7 +162,7 @@
   }
 
   #projects .details-container {
-    flex: 0 1 calc(45% - 2rem);
-    max-width: 45%;
+    flex: 0 1 calc(35% - 2rem);
+    max-width: 35%;
   }
 }
