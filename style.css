@@ -109,6 +109,8 @@ a:hover {
 }
 .menu-links.open {
   max-height: 300px;
+  background-color: hwb(0 100% 0% / 0.713);
+  z-index: 1;
 }
 
 .hamburger-icon.open span:first-child {
@@ -160,6 +162,7 @@ section {
 
 #prof-pic {
   border-radius: 50%;
+  z-index: 10000;
 }
 
 .section__pic-container {
@@ -313,8 +316,8 @@ section {
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
 }
 
 .experience-details-container {
@@ -337,11 +340,11 @@ article {
 }
 
 article h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .exIc {
-  height: 2.5rem;
+  height: 2.3rem;
   margin: 0rem 1.5rem;
 }
 
