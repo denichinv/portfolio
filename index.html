@@ -6,6 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vilizar Denichin | Front-End Developer</title>
   <meta name="description" content="Portfolio of Vilizar, a junior front-end developer skilled in HTML, CSS, JavaScript, React, and TypeScript. Explore projects showcasing clean, responsive, and user-focused web applications.">
+  <head>
+    <meta property="og:title" content="Vilizar Denichin | Front-End Developer">
+    <meta property="og:description" content="Front-End Developer specializing in React and TypeScript. View my portfolio of web applications.">
+    <meta property="og:image" content="https://vilizardenichin.netlify.app/assets/og-image.png">
+    <meta property="og:url" content="https://vilizardenichin.netlify.app">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vilizar Denichin | Front-End Developer">
+    <meta name="twitter:description" content="Front-End Developer specializing in React and TypeScript">
+    <meta name="twitter:image" content="https://vilizardenichin.netlify.app/assets/og-image.png">
+  </head>
 
   <link rel="icon" href="assets/icon.png" type="image/png">
 
@@ -55,7 +66,8 @@
       <h1 class="title">Vilizar Denichin</h1>
       <p class="section__text__p2">Frontend Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')" aria-label="Download CV as PDF">Download CV</button>
+
         <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info</button>
       </div>
       <div id="socials-container">
@@ -95,7 +107,7 @@
           
           <p>My work includes DevQuiz (TypeScript with modular SCSS architecture featuring 9 reusable mixins), Workout Builder (localStorage persistence with Tailwind CSS), and CineVault (TMDB API integration with client-side filtering). I emphasize clean code practices, accessibility standards, and performance optimization in all projects.</p>
           
-          <p>Currently seeking remote, on-site, or hybrid opportunities across London and Bedfordshire.</p>
+          <p>Currently seeking remote, on-site, or hybrid opportunities across London and Bedfordshire.</p> 
         </div>
       </div>
 
@@ -248,13 +260,14 @@
       <div class="about-containers">
         <div class="details-container color-container fade-in-up">
           <div class="project-container">
-            <img src="./assets/project-3.webp" alt="Project 3" class="project-img" />
+            <img src="./assets/project-3.webp" alt="DevQuiz application screenshot" class="project-img" />
+
           </div>
           <h2 class="experience-sub-title project-title"> DevQuiz</h2>
           <h4 class="project-sub-title">React | TypeScript | SASS (SCSS) <br>  QuizAPI.io | Vite </h4> <br>
 
 
-          <p class="section__text__p1">TypeScript-based quiz application with multi-stage flows (setup → questions → completion). Features modular SCSS architecture with 9 reusable mixins and 30+ variables, real-time score tracking, instant answer feedback with visual state indicators, and secure API key handling via environment variables.</p><br>
+          <p class="section__text__p1">TypeScript-based quiz application with multi-stage flows (setup → questions → completion). Features modular SCSS architecture with 9 reusable mixins and 30+ variables, real-time score tracking, instant answer feedback with visual state indicators, and secure API key handling via environment variables.</p><br> <br>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/denichinv/quiz-app/tree/main/quiz-app', '_blank')">Github</button>
@@ -266,9 +279,9 @@
         </div>
         <div class="details-container color-container fade-in-up">
           <div class="project-container">
-            <img src="./assets/project-1.webp" alt="Project 1" class="project-img" loading="lazy"/>
+            <img src="./assets/project-1.webp" alt="CineVault movie library screenshot" class="project-img" loading="lazy"/>
           </div>
-          <h2 class="experience-sub-title project-title">CineVault - Movie Library App</h2>
+          <h2 class="experience-sub-title project-title">CineVault</h2>
           <h4 class="project-sub-title">React | CSS3 | TMDB API <br> Vite
           </h4> <br>
 
@@ -285,12 +298,12 @@
         </div>
         <div class="details-container color-container fade-in-up">
           <div class="project-container">
-            <img src="./assets/project-4.webp" alt="Project 4" class="project-img" loading="lazy" />
+            <img src="./assets/project-4.webp" alt="Workout Routine Builder screenshot" class="project-img" loading="lazy" />
           </div>
           <h2 class="experience-sub-title project-title">Workout Routine Builder</h2>
           <h4 class="project-sub-title">React | JavaScript | Tailwind CSS <br>Vite | LocalStorage </h4> <br>
 
-          <p class="section__text__p1"><p class="section__text__p1">React fitness planner with localStorage API for client-side data persistence. Build custom weekly routines with controlled components managing sets, reps, and exercise tracking across a 7-day calendar. Mobile-responsive interface built with Tailwind CSS.</p><br> <br>
+          <p class="section__text__p1">React fitness planner with localStorage API for client-side data persistence. Build custom weekly routines with controlled components managing sets, reps, and exercise tracking across a 7-day calendar. Mobile-responsive interface built with Tailwind CSS.</p><br> <br>
 
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
