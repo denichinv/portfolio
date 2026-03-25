@@ -22,3 +22,6 @@ function toggleTheme() {
     aboutImg.src = "assets/about-pic.webp";
   }
 }
+
+const year = new Date().getFullYear();
+document.getElementById("year").textContent = year;
