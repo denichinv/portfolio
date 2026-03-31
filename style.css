@@ -184,6 +184,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .section__text__p2 {
@@ -218,6 +219,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: auto;
 }
 
 .btn {
@@ -285,6 +287,8 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
+
+  flex-direction: column;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -295,7 +299,9 @@ section {
 .details-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .section-container {
   gap: 4rem;
@@ -398,6 +404,8 @@ article h3 {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 /* contacts section */

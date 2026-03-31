@@ -7,20 +7,26 @@
 
   <title>Vilizar Denichin | Front-End Developer</title>
 
-  <meta name="description" content="Front-End Developer specializing in React and TypeScript. I build modern, responsive, and user-focused web applications." />
+  <meta name="description"
+    content="Front-End Developer specializing in React and TypeScript. I build modern, responsive, and user-focused web applications." />
 
   <meta property="og:title" content="Vilizar Denichin | Front-End Developer">
-  <meta property="og:description" content="Front-End Developer specializing in React and TypeScript. View my portfolio of web applications.">
+  <meta property="og:description"
+    content="Front-End Developer specializing in React and TypeScript. View my portfolio of web applications.">
   <meta property="og:image" content="https://vilizar.dev/assets/og-image.png">
   <meta property="og:url" content="https://vilizar.dev">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Vilizar Denichin | Front-End Developer">
-  <meta name="twitter:description" content="Front-End Developer specializing in React and TypeScript">
+  <meta name="twitter:description"
+    content="Front-End Developer specializing in React and TypeScript">
   <meta name="twitter:image" content="https://vilizar.dev/assets/og-image.png">
 
   <link rel="icon" href="/assets/icon.png" type="image/png" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/mediaqueries.css" />
 </head>
 
   <link rel="icon" href="assets/icon.png" type="image/png">
@@ -30,75 +36,86 @@
 </head>
 
 <body>
+ 
+  <!-- THEME -->
   <div class="theme-toggle-container fade-in-up">
     <button id="theme-toggle" onclick="toggleTheme()">
       <img id="theme-icon" src="assets/dark.png" alt="Toggle Theme">
     </button>
   </div>
+  <!-- NAV -->
   <nav id="desktop-nav" class="fade-in-up">
     <div class="logo"> Vilizar Denichin</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#contacts">Contact</a></li>
     </ul>
   </nav>
   <nav id="hamburger-nav">
     <div class="logo">Vilizar Denichin</div>
     <div id="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
       <div class="menu-links">
         <ul>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
+   <!-- PROFILE -->
   <section id="profile" class="fade-in-up">
     <div class="section__pic-container">
       <img src="./assets/profile-pic.webp" alt="Vilizar Denichin profile picture" id="prof-pic" loading="eager">
     </div>
+
     <div class="section__text">
       <p class="section__text__p1">Hello I'm</p>
       <h1 class="title">Vilizar Denichin</h1>
-      <p class="section__text__p2">Frontend Developer</p>
+      <p class="section__text__p2">Front-End Developer</p>
+
       <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')" aria-label="Download CV as PDF">Download CV</button>
-
-        <button class="btn btn-color-1" onclick="location.href='./#contacts'">Contact Info</button>
+        <a href="./assets/resume.pdf" class="btn btn-color-2">Download CV</a>
+        <a href="#contacts" class="btn btn-color-1">Contact Info</a>
       </div>
+
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="Linkedin profile" class="icons"
-          onclick="window.open('https://www.linkedin.com/in/vilizar-denichin/', '_blank')">
+        <a href="https://www.linkedin.com/in/vilizar-denichin/" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icons">
+        </a>
 
-        <img src="./assets/github.png" alt="Github profile" class="icons"
-          onclick="window.open('https://github.com/denichinv', '_blank')">
-
+        <a href="https://github.com/denichinv" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" alt="GitHub profile" class="icons">
+        </a>
       </div>
     </div>
   </section>
+
+   <!-- ABOUT -->
   <section id="about" class="fade-in-up">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
+
     <div class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/about-pic.webp" alt="Profile picture" class="about-pic" id="about-pic" loading="lazy">
+        <img src="./assets/about-pic.webp" alt="Profile picture" class="about-pic" loading="lazy">
       </div>
+
       <div class="about-details-container">
         <div class="about-containers">
+
           <div class="details-container fade-in-up">
             <img src="./assets/experience.png" class="icon" alt="projects icon">
             <h3>Projects</h3>
             <p>15+ Projects<br>Web Development</p>
           </div>
+
           <div class="details-container fade-in-up">
             <img src="./assets/education.png" class="icon" alt="education icon">
             <h3>Education</h3>
@@ -107,17 +124,31 @@
           </div>
 
         </div>
-        <div class="text-container">
-          <p>Front-End Developer specializing in React and TypeScript with a focus on building responsive, user-centric web applications. Developed 15+ projects demonstrating expertise in component-based architecture, state management, and RESTful API integration.</p>
-          
-          <p>My work includes DevQuiz (TypeScript with modular SCSS architecture featuring 9 reusable mixins), Workout Builder (localStorage persistence with Tailwind CSS), and CineVault (TMDB API integration with client-side filtering). I emphasize clean code practices, accessibility standards, and performance optimization in all projects.</p>
-          
-          <p>Currently seeking remote, on-site, or hybrid opportunities across London and Bedfordshire.</p> 
-        </div>
-      </div>
 
-      <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow" onclick="location.href='./#experience'">
+        <div class="text-container">
+  <p>
+    Front-End Developer specializing in React and TypeScript, focused on building responsive, user-centric web applications.
+  </p>
+
+  <p>
+    Developed 15+ projects demonstrating component-based architecture, state management, and REST API integration.
+  </p>
+
+  <p>
+    Key projects include DevQuiz, CineVault, Workout Builder, and Euphoria Wellness Studio.
+  </p>
+
+  <p>
+    Currently seeking remote, on-site, or hybrid opportunities across London and Bedfordshire.
+  </p>
+</div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow"onclick="location.href='./#experience'">
   </section>
+  <!-- EXPERIENCE -->
+
   <section id="experience" class="fade-in-up">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
@@ -263,110 +294,146 @@
 
     <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow" onclick="location.href='./#projects'" >
   </section>
+   <!-- PROJECTS -->
   <section id="projects" class="fade-in-up">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
+
     <div class="experience-details-container">
-      
       <div class="about-containers">
-         <div class="details-container color-container fade-in-up">
+        <!-- EUPHORIA -->
+        <div class="details-container color-container fade-in-up">
+          <div class="project-container">
+            <img src="./assets/euphoria-mockup.webp"
+              alt="Euphoria Wellness Studio website preview"
+              class="project-img"
+              loading="lazy" />
+          </div>
+
+          <h2 class="experience-sub-title project-title">Euphoria Wellness Studio</h2>
+
+          <h4 class="project-sub-title">
+            React | TypeScript | Vite | Tailwind CSS
+          </h4>
+
+          <p class="section__text__p1">
+            A premium wellness studio website built for a boutique Pilates Reformer & XBody EMS studio.
+            Designed with a clean, modern UI, it includes bilingual support (BG/EN), responsive layout,
+            and integrated contact forms using Netlify Forms, delivering a smooth user experience.
+          </p>
+
+          <div class="btn-container">
+            <a href="https://github.com/denichinv/euphoria-wellness-studio-bg"
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-color-2 project-btn">GitHub</a>
+
+            <a href="http://euphoria-wellness.com/"
+              target="_blank" rel="noopener noreferrer"
+              class="btn btn-color-2 project-btn">Live Demo</a>
+          </div>
+        </div>
+        <!-- DevQuiz -->
+     <div class="details-container color-container fade-in-up">
   <div class="project-container">
-    <img src="./assets/project-4.webp" alt="Euphoria Wellness Studio website preview" class="project-img" loading="lazy" />
+    <img src="./assets/devquiz-mockup.webp" alt="DevQuiz application screenshot" class="project-img" loading="lazy"/>
   </div>
 
-  <h2 class="experience-sub-title project-title">Euphoria Wellness Studio</h2>
+  <h2 class="experience-sub-title project-title">DevQuiz</h2>
 
   <h4 class="project-sub-title">
-    React | TypeScript | Vite | Tailwind CSS <br>
-    i18n (BG/EN) 
-    
-    
-  </h4> 
-  <br>
+    React | TypeScript | Vite | SCSS <br> Vitest | Playwright | GitHub Actions
+  </h4>
+ 
 
   <p class="section__text__p1">
- A premium wellness studio website built for a boutique Pilates Reformer & XBody EMS studio. 
-  Designed with a clean, modern UI, it includes bilingual support (BG/EN), responsive layout, and integrated contact forms using Netlify Forms, delivering a smooth user experience.
+    A TypeScript quiz application built with a modular SCSS architecture. Features multi-stage flows (setup, questions, results), real-time score updates, and instant visual feedback. Integrates an external REST API with automated testing and CI workflows for reliability.
   </p>
-  <br><br>
+  
 
   <div class="btn-container">
-    <button class="btn btn-color-2 project-btn"
-      onclick="window.open('https://github.com/denichinv/euphoria-wellness-studio-bg', '_blank')">
-      Github
-    </button>
+    <a 
+      href="https://github.com/denichinv/quiz-app/tree/main/quiz-app"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-color-2 project-btn"
+    >
+      GitHub
+    </a>
 
-    <button class="btn btn-color-2 project-btn"
-      onclick="window.open('http://euphoria-wellness.com/', '_blank')">
+    <a 
+      href="https://dev-quiz-v.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-color-2 project-btn"
+    >
       Live Demo
-    </button>
+    </a>
   </div>
 </div>
-        <div class="details-container color-container fade-in-up">
-          <div class="project-container">
-            <img src="./assets/project-3.webp" alt="DevQuiz application screenshot" class="project-img" />
 
-          </div>
-          <h2 class="experience-sub-title project-title"> DevQuiz</h2>
-          <h4 class="project-sub-title">React | TypeScript | Vite | SCSS <br> Vitest | Playwright | GitHub Actions </h4> <br>
+ <!-- CineVault -->
+<div class="details-container color-container fade-in-up">
+  <div class="project-container">
+    <img src="./assets/cinevault-mockup.webp" alt="CineVault movie library screenshot" class="project-img" loading="lazy"/>
+  </div>
+
+  <h2 class="experience-sub-title project-title">CineVault</h2>
+
+  <h4 class="project-sub-title">
+    React | Vite | CSS <br> Vitest | Playwright | GitHub Actions | TMDB API
+  </h4>
 
 
-          <p class="section__text__p1">A TypeScript quiz application built with a modular SCSS architecture. Features multi-stage flows (setup, questions, results), real-time score updates, and instant visual feedback. Integrates an external REST API with automated testing and CI workflows for reliability.</p>
-<br><br>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/denichinv/quiz-app/tree/main/quiz-app', '_blank')">Github</button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://dev-quiz-v.netlify.app/', '_blank')">Live Demo</button>
+  <p class="section__text__p1">
+    A movie discovery application using the TMDB API, focused on fast and intuitive browsing. Includes client-side filtering by rating, multi-criteria sorting, and a responsive interface. Backed by automated testing and CI workflows for consistent, reliable builds.
+  </p>
+  
 
-          </div>
+  <div class="btn-container">
+    <a 
+      href="https://github.com/denichinv/CineVault"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-color-2 project-btn"
+    >
+      GitHub
+    </a>
 
-        </div>
-        <div class="details-container color-container fade-in-up">
-          <div class="project-container">
-            <img src="./assets/project-1.webp" alt="CineVault movie library screenshot" class="project-img" loading="lazy"/>
-          </div>
-          <h2 class="experience-sub-title project-title">CineVault</h2>
-          <h4 class="project-sub-title">React | Vite | CSS <br> Vitest | Playwright | GitHub Actions | TMDB API
-           </h4> <br>
-
-          <p class="section__text__p1">A movie discovery application using the TMDB API, focused on fast and intuitive browsing. Includes client-side filtering by rating, multi-criteria sorting, and a responsive interface. Backed by automated testing and CI workflows for consistent, reliable builds.</p>
-<br><br>
-
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/denichinv/CineVault', '_blank')">Github</button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://cinevaultmoviesapp.netlify.app/', '_blank')">Live Demo</button>
-
-          </div>
-        </div>
-      
-        </div>
-       
-       
-
-      </div>
+    <a 
+      href="https://cinevaultmoviesapp.netlify.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-color-2 project-btn"
+    >
+      Live Demo
+    </a>
+  </div>
+</div>
 
     </div>
     <img src="./assets/arrow.png" alt="arrow icon" class="icons" id="arrow" onclick="location.href='./#contacts'">
   </section>
+ <!-- CONTACT -->
   <section id="contacts" class="fade-in-up">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
+
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
         <img src="./assets/email.png" alt="email icon" class="icon email-icon">
         <p><a href="mailto:denichinv@gmail.com">denichinv@gmail.com</a></p>
       </div>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/linkedin.png" alt="linkedin icon" class="icon">
-          <p><a href="https://www.linkedin.com/in/vilizar-denichin/" target="_blank">LinkedIn</a></p>
-        </div>
+
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="linkedin icon" class="icon">
+        <p><a href="https://www.linkedin.com/in/vilizar-denichin/" target="_blank">LinkedIn</a></p>
       </div>
+    </div>
   </section>
 
+
+
+  <!-- FOOTER -->
   <footer>
     <nav>
       <div class="nav-links-container fade-in-up">
@@ -375,14 +442,11 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-
         </ul>
       </div>
-
     </nav>
 
-    <p class="fade-in-up">© <span id="year"></span> Vilizar Denichin</p>
-
+    <p>© <span id="year"></span> Vilizar Denichin</p>
   </footer>
  <script src="script.js" defer></script>
 </body>
